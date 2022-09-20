@@ -57,10 +57,10 @@ const Students = () => {
                     <h1 className="studentDetailsNameTag">Student Details</h1>
                     <button className='addNewStudent' onClick={() => { setHide(!hide) }}>Add New Student</button>
                 </div><br></br>
-                <div className='tab'>
-                    <table className="table table-bordered">
+                <div>
+                    <table>
                         <thead>
-                            <tr className="table-primary">
+                            <tr>
                                 <th scope="col">Name</th>
                                 <th scope="col">Age</th>
                                 <th scope="col">Course</th>
@@ -71,7 +71,7 @@ const Students = () => {
                         </thead>
                         <tbody>
                             {data && data.map((row, i) =>
-                                <tr className="table-primary">
+                                <tr>
                                     <th scope="row">{row.name}</th>
                                     <td>{row.age}</td>
                                     <td>{row.course}</td>
